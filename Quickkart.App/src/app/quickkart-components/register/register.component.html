@@ -1,0 +1,117 @@
+
+<div class="overlay">
+  <div style="margin:0 auto; background-color: #fff; width: 500px; height: 600px; margin-top: 50px">
+    <h2>&nbsp;&nbsp;Register </h2>
+    <!--Step 1 : Adding HTML-->
+    <form #registerForm="ngForm" (ngSubmit)="registerUser(registerForm)" novalidate>
+
+      <div class="container">
+        <div class="form-horizontal">
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <label><b>Email Id</b></label>
+            <input type="email" placeholder="Enter EmailId" name="email" #emailRef="ngModel" ngModel class="form-control" required pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$">
+            <div *ngIf="emailRef.errors && (emailRef.dirty || emailRef.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!emailRef.errors.required">
+                <p>&nbsp;Email id is mandatory</p>
+              </div>
+              <div [hidden]="!emailRef.errors.pattern">
+                <p>&nbsp;Email id entered is not in proper format.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="pwd" #pwdRef="ngModel" ngModel class="form-control" required>
+            <div *ngIf="pwdRef.errors && (pwdRef.dirty || pwdRef.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!pwdRef.errors.required">
+                <p>&nbsp;Password is mandatory</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <label><b>First Name:</b></label>
+            <input type="text" placeholder="Enter First Name" name="firstname" #firstnameRef="ngModel" ngModel class="form-control" required>
+            <div *ngIf="firstnameRef.errors && (firstnameRef.dirty || firstnameRef.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!firstnameRef.errors.required">
+                <p>&nbsp;First name is mandatory</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <label><b>Last Name:</b></label>
+            <input type="text" placeholder="Enter Last Name" name="lastname" #lastnameRef="ngModel" ngModel class="form-control" required>
+            <div *ngIf="lastnameRef.errors && (lastnameRef.dirty || lastnameRef.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!lastnameRef.errors.required">
+                <p>&nbsp;Last name is mandatory</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <label><b>Gender:</b></label>
+            &nbsp;&nbsp;
+
+            <label>
+              <input type="radio" #genderRef="ngModel" ngModel id="male" name="gender" value="male"><span></span>
+              <label for="male">Male</label>
+            </label><label>
+              <input type="radio" id="female" #genderRef="ngModel" ngModel name="gender" value="female"><span></span>
+              <label for="female">Female</label>
+            </label><label>
+              <input type="radio" id="other" #genderRef="ngModel" ngModel name="gender" value="other"><span></span>
+              <label for="other">Other</label>
+            </label>
+
+
+          </div>
+
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <label><b>Mobile:</b></label>
+            <input type="text" placeholder="Enter Mobile number" name="mobile" #mobileRef="ngModel" ngModel class="form-control" required>
+            <div *ngIf="mobileRef.errors && (mobileRef.dirty || mobileRef.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!mobileRef.errors.required">
+                <p>&nbsp;Mobile number is mandatory</p>
+              </div>
+            </div>
+          </div>
+
+
+          <label for="dateofbirth">Date of Birth:</label>
+          <input type="date" #dobref="ngModel" ngModel id="dateofbirth" name="dateofbirth">
+
+
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <label><b>Address:</b></label>
+            <input type="text" placeholder="Enter Address" name="address" #addressRef="ngModel" ngModel class="form-control" required>
+            <div *ngIf="addressRef.errors && (addressRef.dirty || addressRef.touched)" style="text-align:left; padding-top:5px; color:red;">
+              <div [hidden]="!addressRef.errors.required">
+                <p>&nbsp;Address is mandatory</p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-group" style="width:450px; margin-left:inherit">
+            <button type="submit" [disabled]="!registerForm.form.valid">Register</button>
+          </div>
+        </div>
+      </div>
+
+    </form>
+    <div *ngIf="showMsgDiv">{{errorMessage}}
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

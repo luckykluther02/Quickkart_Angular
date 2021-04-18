@@ -1,0 +1,11 @@
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\bin\Debug\Quickkart.ConsoleApp.exe.config
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\bin\Debug\Quickkart.ConsoleApp.exe
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\bin\Debug\Quickkart.ConsoleApp.pdb
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\bin\Debug\Quickkart.DataAccessLayer.exe
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\bin\Debug\Quickkart.DataAccessLayer.pdb
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\bin\Debug\Quickkart.DataAccessLayer.exe.config
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\obj\Debug\Quickkart.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\obj\Debug\Quickkart.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\obj\Debug\Quickkart.ConsoleApp.csproj.CopyComplete
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\obj\Debug\Quickkart.ConsoleApp.exe
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.ConsoleApp\obj\Debug\Quickkart.ConsoleApp.pdb

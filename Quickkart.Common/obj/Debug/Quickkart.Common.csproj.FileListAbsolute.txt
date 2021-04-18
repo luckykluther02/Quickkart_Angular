@@ -1,0 +1,7 @@
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.Common\bin\Debug\Quickkart.Common.exe.config
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.Common\bin\Debug\Quickkart.Common.exe
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.Common\bin\Debug\Quickkart.Common.pdb
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.Common\obj\Debug\Quickkart.Common.csprojAssemblyReference.cache
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.Common\obj\Debug\Quickkart.Common.csproj.CoreCompileInputs.cache
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.Common\obj\Debug\Quickkart.Common.exe
+C:\Users\Lucky\source\Latest Project\Quickkart\Quickkart.Common\obj\Debug\Quickkart.Common.pdb

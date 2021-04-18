@@ -1,0 +1,11 @@
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\bin\Debug\Infosys.Quickkart.exe.config
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\bin\Debug\Infosys.Quickkart.exe
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\bin\Debug\Infosys.Quickkart.pdb
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\bin\Debug\Infosys.Quickkart.DataAccessLayer.exe
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\bin\Debug\Infosys.Quickkart.DataAccessLayer.pdb
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\bin\Debug\Infosys.Quickkart.DataAccessLayer.exe.config
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\obj\Debug\Infosys.Quickkart.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\obj\Debug\Infosys.Quickkart.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\obj\Debug\Infosys.Quickkart.ConsoleApp.csproj.CopyComplete
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\obj\Debug\Infosys.Quickkart.exe
+C:\Users\Lucky\source\Infosys.Quickkart.Backup\Infosys.Quickkart\obj\Debug\Infosys.Quickkart.pdb

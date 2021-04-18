@@ -1,0 +1,59 @@
+<div class="overlay">
+  <header>
+  <div class="wrapper">
+    <div class="logo">
+      <img src="https://i.postimg.cc/GpdP362Q/logo.png" alt="">
+    </div>
+    <ul class="nav-area">
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/viewProduct">Products</a></li>
+      <li><a routerLink="/viewCart">Cart</a></li>
+      <li><a routerLink="/viewOrders">My Orders</a></li>
+      <li><a (click)="logOut()">Log Out</a></li>
+    </ul>
+  </div>
+</header>
+<div style="text-align:center; padding-top: 100px">
+  <h1 class="show">View Products</h1>
+  <br />
+  <div class="row">
+    <div class="col-md-9" style="text-align:right; padding-right: 20px">
+      <label style="color: #fff; font-size: 15px">Filter Products: </label>
+    </div>
+    <div class="col-md-2" >
+      <select class="form-control" #categorydrop (change)="searchProductByCategory(categorydrop.value)">
+        <option value="0">All Categories</option>
+        <option *ngFor="let category of categories" value={{category.CategoryId}}>{{category.CategoryName}}</option>
+      </select>
+    </div>
+  </div>
+  <br />
+  <div class="table-responsive">
+    <table class="table-striped table-bordered" align="center" style="border:5px solid #7390a9; width: 900px; height: 300px; margin-left: 200px; " *ngIf="filteredProducts && filteredProducts.length">
+      <thead>
+        <tr style="background-color: #7390a9; height:25px; font-size:12pt">
+          <th style="text-align:center">Product Id</th>
+          <th style="text-align:center">Product Name</th>
+          <th style="text-align:center">Category Id</th>
+          <th style="text-align:center">Price</th>
+          <th style="text-align:center">Quantity Available</th>
+          <th style="text-align:center">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of filteredProducts" style="background-color:white; height:25px; text-align:center">
+          <td>{{product.ProductId}}</td>
+          <td>{{product.ProductName}}</td>
+          <td>{{product.CategoryId}}</td>
+          <td>{{product.Price}}</td>
+          <td>{{product.QuantityAvailable}}</td>
+          <td><button type="button" name="AddToCart" style="font-size: 16px; padding-left: 5px; padding-right: 5px" class="btn btn-default btn-primary btn-lg" (click)="AddToCart(product)">Add</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="showMsgDiv">
+    <h4 style="text-align:center" class="show">{{errorMsg}}</h4>
+  </div>
+</div>
+  </div>

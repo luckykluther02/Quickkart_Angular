@@ -1,0 +1,109 @@
+<div class="overlay">
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="https://i.postimg.cc/GpdP362Q/logo.png" alt="">
+      </div>
+      <ul class="nav-area">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/viewProduct">Products</a></li>
+        <li><a routerLink="/viewCart">Cart</a></li>
+        <li><a routerLink="/viewOrders">My Orders</a></li>
+        <li><a (click)="logOut()">Log Out</a></li>
+      </ul>
+    </div>
+
+  </header>
+  <div>
+    <div style="margin:0 auto; background-color: #fff; width: 500px; margin-top: 70px">
+
+      <form #checkout="ngForm">
+        <div class="container" style="padding-left: 10px; padding-right: 10px">
+          <div class="price">
+            <h1>Choose to pay</h1>
+          </div>
+          <br />
+
+          <div class="row paypal" style="display:contents">
+
+            <input type="radio" />&nbsp;&nbsp;
+            <span class="right">
+              <img class="img-thumbnail" style="width: 110px; height: 65px;" src="assets/Images/Paypal.png" alt="paypal" />
+            </span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="radio" />&nbsp;&nbsp;
+            <span class="right">
+              <img class="img-thumbnail" style="width: 140px; height: 65px;" src="assets/Images/VisaCard.png" alt="visa" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
+
+            <input type="radio" />&nbsp;&nbsp;
+            <span class="right">
+              <img class="img-thumbnail" style="width: 110px; height: 65px;" src="assets/Images/GooglePay.png" alt="googlepay" />
+            </span>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <div>
+              <input type="radio" #wallet="ngModel" ngModel required />
+              <b style="font-size:20px">&nbsp;&nbsp;Quickkart Wallet</b>
+            </div>
+          </div>
+          <br />
+
+          <label for="cardholdername">Name</label>
+          <input placeholder="e.g. Richard Bovell" id="cardholdername" type="text" />
+
+
+          <label for="cardnumber">Card number</label>
+          <input id="cardnumber" type="text" pattern="[0-9]{16,19}" maxlength="19" placeholder="8888-8888-8888-8888" />
+
+
+          <label for="expiry-date">Expiry:</label>&nbsp;&nbsp;
+          <select id="expiry-date">
+            <option>MM</option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+          <span>/</span>
+          <select id="expiry-date">
+            <option>YYYY</option>
+            <option value="2016">2016</option>
+            <option value="2017">2017</option>
+            <option value="2018">2018</option>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+          </select>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <label style="align-content:end" for="cvv">CVC/CVV:</label>&nbsp;&nbsp;
+          <input type="text" maxlength="4" placeholder="123" style="width:75px" />
+
+          <div class="button">
+            <button style="background-color: #4CAF50; font-size: 15px; color: white;" [disabled]="checkout.invalid" class="btn btn-default btn-primary" type="submit" (click)="CheckOut()"><i class="ion-locked"></i> Confirm and Pay</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  </div>

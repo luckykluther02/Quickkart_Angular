@@ -1,0 +1,184 @@
+.mid {
+  text-align: center;
+  padding: 80px 0;
+  height: 100%;
+  width: 100%
+}
+
+h1 {
+  color: #88B04B;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #404F5E;
+  font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+i {
+  color: #9ABC66;
+  font-size: 100px;
+  line-height: 200px;
+  margin-left: -15px;
+}
+
+.card {
+  background: white;
+  padding: 60px;
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  margin: 0 auto;
+  width: 500px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper {
+  width: 1170px;
+  margin: auto;
+}
+
+.overlay {
+  background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url('C:/Users/Lucky/source/repos/Infosys.Quickkart/Infosys.Quickkart.App/src/app/Images/shopping.jpg');
+  background-size: cover;
+  background-position: center center;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.show {
+  color: #fff;
+  font-size: 30px;
+}
+
+header {
+  height: 10vh;
+}
+
+.nav-area {
+  float: right;
+  list-style: none;
+  margin-top: 30px;
+}
+
+  .nav-area li {
+    display: inline-block;
+  }
+
+    .nav-area li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 5px 20px;
+      font-family: poppins;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+      .nav-area li a:hover {
+        background: #fff;
+        color: #333;
+      }
+
+.logo {
+  float: left;
+}
+
+  .logo img {
+    width: 100%;
+    padding: 15px 0;
+  }
+
+.welcome-text {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  margin: 20% 30%;
+  text-align: center;
+}
+
+  .welcome-text h1 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 60px;
+  }
+
+  .welcome-text a {
+    border: 1px solid #fff;
+    padding: 10px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 20px;
+    display: inline-block;
+    color: #fff;
+  }
+
+    .welcome-text a:hover {
+      background: #fff;
+      color: #333;
+    }
+
+/*resposive*/
+
+@media (max-width:600px) {
+  .wrapper {
+    width: 100%;
+  }
+
+  .logo {
+    float: none;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+  }
+
+  img {
+    width:;
+  }
+
+  .nav-area {
+    float: none;
+    margin-top: 0;
+  }
+
+    .nav-area li a {
+      padding: 5px;
+      font-size: 11px;
+    }
+
+  .nav-area {
+    text-align: center;
+  }
+
+
+  .welcome-text {
+    width: 100%;
+    height: auto;
+    margin: 30% 0;
+  }
+
+    .welcome-text h1 {
+      font-size: 30px;
+    }
+}
+
+

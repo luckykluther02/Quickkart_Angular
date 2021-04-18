@@ -1,0 +1,46 @@
+<div class="overlay">
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="https://i.postimg.cc/GpdP362Q/logo.png" alt="">
+      </div>
+      <ul class="nav-area">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/viewProduct">Products</a></li>
+        <li><a routerLink="/viewCart">Cart</a></li>
+        <li><a routerLink="/viewOrders">My Orders</a></li>
+        <li><a (click)="logOut()">Log Out</a></li>
+      </ul>
+    </div>
+  </header>
+  <div style="text-align:center; padding-top: 100px">
+    <h1 class="show">View Orders</h1>
+    <br />
+    <br />
+    <div class="table-responsive">
+      <table class="table-striped table-bordered" align="center" style="border:5px solid #7390a9; width: 800px; height: 300px; margin-left: 300px; align-content:center;" *ngIf="cart && cart.length">
+        <thead>
+          <tr style="background-color: #7390a9; height:25px; font-size:12pt">
+            <th style="text-align:center">Product Name</th>
+            <th style="text-align:center">Quantity Purchased</th>
+            <th style="text-align:center">Total Amount</th>
+            <th style="text-align:center">Order ID</th>
+            <th style="text-align:center">Order Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of cart" style="background-color:white; height:25px; text-align:center">
+            <td>{{product.ProductName}}</td>
+            <td>{{product.QuantityPurchased}}</td>
+            <td>{{product.TotalAmount}}</td>
+            <td>{{product.OrderId}}</td>
+            <td>{{product.OrderDate}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="showMsgDiv">
+      <h4 style="text-align:center" class="show">{{errorMsg}}</h4>
+    </div>
+  </div>
+  </div>

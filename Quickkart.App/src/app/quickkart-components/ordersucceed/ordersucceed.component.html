@@ -1,0 +1,27 @@
+<div class="overlay">
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="https://i.postimg.cc/GpdP362Q/logo.png" alt="">
+      </div>
+      <ul class="nav-area">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/viewProduct">Products</a></li>
+        <li><a routerLink="/viewCart">Cart</a></li>
+        <li><a routerLink="/viewOrders">My Orders</a></li>
+        <li><a (click)="logOut()">Log Out</a></li>
+      </ul>
+    </div>
+
+  </header>
+  <div class="mid">
+    <div class="card">
+      <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
+        <i class="checkmark">✔</i>
+      </div>
+      <h3 style="text-align:left;">THANK YOU FOR YOUR PURCHASE!</h3>
+      <p style="text-align:left; font-size: 15px">You will receive an order confirmation email with details of your order.<br /> Your order # is: <b>{{orderId}}</b> </p>
+      <a style="float:left; font-size: 12px" routerLink="/viewProduct">Continue Shopping</a>
+    </div>
+  </div>
+  </div>

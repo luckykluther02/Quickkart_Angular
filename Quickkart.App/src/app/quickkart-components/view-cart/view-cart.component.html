@@ -1,0 +1,52 @@
+<div class="overlay">
+  <header>
+    <div class="wrapper">
+      <div class="logo">
+        <img src="https://i.postimg.cc/GpdP362Q/logo.png" alt="">
+      </div>
+      <ul class="nav-area">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/viewProduct">Products</a></li>
+        <li><a routerLink="/viewCart">Cart</a></li>
+        <li><a routerLink="/viewOrders">My Orders</a></li>
+        <li><a (click)="logOut()">Log Out</a></li>
+      </ul>
+    </div>
+  </header>
+  <div style="text-align:center; padding-top: 100px">
+    <h1 class="show">View Cart</h1>
+    <br />
+
+    <div class="table-responsive">
+      <table class="table-striped table-bordered" align="center" style="border:5px solid #7390a9; width: 800px; margin-left: 300px;  align-content:center;" *ngIf="cart && cart.length">
+        <thead>
+          <tr style="background-color: #7390a9; height:25px; font-size:12pt">
+            <th style="text-align:center">Product Name</th>
+            <th style="text-align:center">Price</th>
+            <th style="text-align:center">Quantity</th>
+            <th style="text-align:center">Total Amount</th>
+            <th style="text-align:center">Action</th>
+            <th style="text-align:center">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let product of cart" style="background-color:white; height:40px; text-align:center">
+            <td>{{product.ProductName}}</td>
+            <td>{{product.Price}}</td>
+            <td>{{product.QuantityPurchased}}</td>
+            <td>{{product.TotalAmount}}</td>
+            <td><button type="submit" name="UpdateCart" style="font-size: 16px; padding-left: 5px; padding-right: 5px" class="btn btn-default btn-primary" (click)="UpdateCart(product)">Update</button></td>
+            <td><button type="submit" name="DeleteCart" style="font-size: 16px; padding-left: 5px; padding-right: 5px" class="btn btn-default btn-primary" (click)="DeleteCart(product)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div *ngIf="showMsgdiv">
+      <h1 style="text-align:center" class="show">{{errorMsg}}</h1>
+    </div>
+    <br />
+    <div *ngIf="cart && cart.length">
+      <button class="btn btn-default btn-primary" style="font-size: 16px; padding-left: 5px; padding-bottom: 5px; padding-right: 5px; padding-top: 5px" routerLink="/checkOut">Proceed to Checkout</button>
+    </div>
+  </div>
+  </div>
